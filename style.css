@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 header {
@@ -217,7 +218,7 @@ footer {
 
 /* Responsive page for mobile */
 
-@media(min-width: 425px) and (max-width: 760px) {
+@media screen and (max-width: 1080px) {
 	.profile {
 		width: 100%;
 		margin: 80px 0px -40px 0px;
