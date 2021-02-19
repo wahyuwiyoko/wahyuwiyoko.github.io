@@ -223,7 +223,7 @@ p.copyright {
 @media screen and (max-width: 1080px) {
 	header {
 		position: static;
-		width: 100%;
+		width: 50%;
 	}
 	
 	.profile {
