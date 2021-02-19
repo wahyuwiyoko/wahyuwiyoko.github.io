@@ -222,7 +222,7 @@ p.copyright {
 
 @media screen and (max-width: 1080px) {
 	header {
-		position: absolute;
+		position: static;
 		width: 100%;
 	}
 	
