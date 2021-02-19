@@ -221,6 +221,11 @@ p.copyright {
 /* Responsive page for mobile */
 
 @media screen and (max-width: 1080px) {
+	header {
+		position: absolute;
+		width: 100%;
+	}
+	
 	.profile {
 		width: 100%;
 		margin: 80px 0px -40px 0px;
