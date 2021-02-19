@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
 header {
@@ -10,8 +9,6 @@ header {
 	left: 0;
 	right: 0;
 	background-color: white;
-	min-height: 60px;
-	padding: 0px 20px;
 	box-shadow: 0px 1px 5px rgba(5, 5, 5, 0.1);
 	transition: all 1s;
 	z-index: 1;
@@ -20,6 +17,7 @@ header {
 header h1.name {
 	margin: 17px 0px 0px 5px;
 	float: left;
+	padding-left: 20px;
 	font-size: 30px;
 }
 
@@ -97,7 +95,7 @@ section.white {
 }
 
 .profile p {
-	text-align: justify;
+	text-align: left;
 	padding: 0px 40px;
 }
 
@@ -200,6 +198,10 @@ footer {
 	color: white;
 }
 
+p.copyright {
+	font-family: 'Questrial', sans-serif;
+}
+
 /* Clearfix */
 
 .cf:before,
@@ -219,6 +221,11 @@ footer {
 /* Responsive page for mobile */
 
 @media screen and (max-width: 1080px) {
+	header {
+		position: absolute;
+		width: 100%;
+	}
+	
 	.profile {
 		width: 100%;
 		margin: 80px 0px -40px 0px;
@@ -249,6 +256,10 @@ footer {
 		display: none;
 	}
 	
+	nav li {
+		margin: auto 30px;
+	}
+
 	nav li a {
 		display: block;
 		padding-bottom: 7px;
@@ -259,7 +270,7 @@ footer {
 		background-repeat: no-repeat;
 		display: inline-block;
 		margin-top: -35px;
-		margin-right: -60px;
+		margin-right: -45px;
 		width: 45px;
 		height: 45px;
 		float: right;
