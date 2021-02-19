@@ -220,7 +220,7 @@ p.copyright {
 
 /* Responsive page for mobile */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 960px) {
 	header {
 		position: absolute;
 		width: 100%;
