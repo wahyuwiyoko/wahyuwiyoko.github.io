@@ -73,7 +73,7 @@ ol, ul {
 }
 
 section {
-	margin-top: 67px;
+	margin-top: 65px;
 	display: block;
 	background-color: #e9ecef;
 	overflow: hidden;
@@ -159,6 +159,8 @@ section.white {
 	padding: 10px;
 	text-align: left;
 	background-color: white;
+	border-bottom-right-radius: .25rem;
+	border-bottom-left-radius: .25rem;
 }
 
 .my-contact li {
@@ -320,9 +322,14 @@ p.copyright {
 		height: 260px;
 	}
 	
+	.portfolio-list p {
+		margin: 0px;
+	}
+	
 	.my-contact li {
 		margin-bottom: 100px;
 		margin-left: 100px;
+		background-color: white;
 		display: block;
 	}
 	
