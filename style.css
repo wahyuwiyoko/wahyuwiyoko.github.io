@@ -319,7 +319,7 @@ p.copyright {
 	.my-contact li {
 		margin-bottom: 100px;
 		margin-left: 100px;
-		background-color: #FFF;
+		background-color: white !important;
 		display: block;
 	}
 	
