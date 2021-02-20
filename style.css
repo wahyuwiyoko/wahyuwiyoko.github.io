@@ -29,7 +29,7 @@ nav {
 
 nav li {
 	display: inline;
-	margin: auto 15px;
+	margin: auto 10px;
 	padding: 10px;
 }
 
@@ -73,9 +73,10 @@ ol, ul {
 }
 
 section {
-	margin-top: 50px;
+	margin-top: 67px;
 	display: block;
 	background-color: #e9ecef;
+	overflow: hidden;
 }
 
 section.white {
@@ -120,10 +121,6 @@ section.white {
 	text-align: center;
 }
 
-.portfolio h2 {
-	line-height: 50px;
-}
-
 .skill img {
 	width: 130px;
 	height: 130px; 
@@ -132,6 +129,7 @@ section.white {
 
 .skill img.php {
 	width: 200px;
+	margin: auto;
 }
 
 .portfolio-list li {
@@ -157,9 +155,10 @@ section.white {
 }
 
 .portfolio-list p {
-	margin: 10px;
+	margin: 4px;
 	padding: 10px;
 	text-align: left;
+	background-color: white;
 }
 
 .my-contact li {
@@ -221,11 +220,6 @@ p.copyright {
 /* Responsive page for mobile */
 
 @media screen and (max-width: 1080px) {
-	header {
-		position: static;
-		width: 50%;
-	}
-	
 	.profile {
 		width: 100%;
 		margin: 80px 0px -40px 0px;
@@ -288,25 +282,52 @@ p.copyright {
 		margin: 17px 0px 0px 0px;
 	}
 	
+	.skill ul {
+		width: 100%;
+	}
+	
+	.skill ul li {
+		display: block;
+	}
+	
 	.skill img {
-		padding: 0px 140px 140px 100px;
+		margin: 40px 0px 40px -80px;
 	}
 	
 	.skill img.php {
-		padding: 0px 140px 140px 80px;
+		padding: 40px 140px 40px 50px;
 	}
 
+	.portfolio-list ul {
+		margin: 0px 0px 0px -185px;
+		width: 100%;
+	}
+	
 	.portfolio-list li {
-		width: 80%;
+		width: 85%;
+		border: 1px solid rgba(0, 0, 0, .125);
+		border-radius: .25rem;
+		background-color: white;
+		margin-bottom: 100px;
+		margin-left: 100px;
+		display: block;
 	}
 	
 	.portfolio-list img {
-		height: 280px;
+		border-top-right-radius: .25rem;
+		border-top-left-radius: .25rem;
+		width: 100%;
+		height: 260px;
 	}
 	
 	.my-contact li {
 		margin-bottom: 100px;
 		margin-left: 100px;
+		display: block;
+	}
+	
+	.my-contact img {
+		 background-color: white;
 	}
 }
 
