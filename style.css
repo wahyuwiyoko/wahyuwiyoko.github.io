@@ -14,7 +14,7 @@ header {
 	z-index: 1;
 }
 
-header h1.name {
+header h1 {
 	margin: 17px 0px 0px 5px;
 	float: left;
 	padding-left: 20px;
@@ -47,7 +47,7 @@ input[type=checkbox] {
 	-webkit-appearance: none;
 }
 
-h1, h2, h3, p.copyright {
+h1, h2, h3, footer p {
 	font-family: 'Questrial', sans-serif;
 	font-size: 40px;
 }
@@ -169,8 +169,7 @@ article.profile .divider {
 }
 
 .my-contact li {
-	width: auto !important;
-	margin-left: 80px !important;
+	width: 300px !important;
 	padding: 30px;
 }
 
@@ -191,7 +190,7 @@ footer {
 	color: white;
 }
 
-p.copyright {
+footer p {
 	font-size: 14px !important;
 }
 
@@ -221,7 +220,7 @@ p.copyright {
 		margin-bottom: -80px;
 	}
 	
-	header h1.name {
+	header h1 {
 		margin: 20px 0px 0px 0px;
 		font-size: 21px;
 		float: left;
