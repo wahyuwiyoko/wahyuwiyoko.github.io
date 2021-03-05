@@ -279,14 +279,14 @@ footer p {
 		margin-bottom: -100px;
 	}
 	
-	.skill ul, .portfolio-list ul {
+	.skill ul, .portfolio-list ul, .my-contact ul {
 		margin: 0px;
 	}
 	
-	.portfolio-list li {
+	.portfolio-list li, .my-contact li {
 		margin: auto 20px;
 		margin-bottom: 100px;
-		width: auto;
+		width: auto !important;
 	}
 	
 	.portfolio-list img {
