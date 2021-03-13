@@ -45,7 +45,7 @@ input[type=checkbox] {
 	-webkit-appearance: none;
 }
 
-h1, h2, h3, footer p, .not-found-title a {
+h1, h2, h3, footer p, .not-found a {
 	font-family: 'Questrial', sans-serif;
 	font-size: 40px;
 }
@@ -198,7 +198,7 @@ footer p {
 	font-size: 14px !important;
 }
 
-section.not-found-title {
+section.not-found {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -208,13 +208,13 @@ section.not-found-title {
 	padding-top: 100px;
 }
 
-.not-found-title h2 {
+.not-found h2 {
 	font-weight: lighter;
 	font-size: 30px;
 	margin: -10px 0px 25px 0px;
 }
 
-.not-found-title a {
+.not-found a {
 	text-decoration: underline;
 	color: black;
 	font-size: 20px;
@@ -327,7 +327,7 @@ section.not-found-title {
 		padding: 30px 0px;
 	}
 	
-	section.not-found-title {
+	section.not-found {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
