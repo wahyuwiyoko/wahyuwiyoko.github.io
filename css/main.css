@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Roboto, sans-serif;
 }
 
 header {
@@ -17,7 +18,7 @@ header h1 {
 	float: left;
 	padding-left: 20px;
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 nav {
@@ -38,6 +39,8 @@ nav li a:hover {
 
 nav li a {
 	font-size: 20px;
+	font-weight: 300;
+	color: #586069;
 }
 
 /* Hide checkbox for menu */
@@ -46,26 +49,22 @@ input[type=checkbox] {
 	-webkit-appearance: none;
 }
 
-h1, h2, h3, footer p, .not-found a {
-	font-family: 'Questrial', sans-serif;
+h1, h2, h3, p, .not-found a {
 	font-size: 40px;
-	font-weight: lighter;
+	font-weight: 300;
+	line-height: 30px;
 }
 
 h3 {
 	font-size: 20px !important;
 }
 
-p, nav li a {
-	font-family: 'Gudea', sans-serif;
-}
-
 a {
 	text-decoration: none;
 }
 
-li a {
-	color: black;
+p {
+	font-size: 16px;
 }
 
 ol, ul {
@@ -87,7 +86,7 @@ section.white {
 	width: 80px;
 	height: 3px;
 	background-color: #57c1b6ff;
-	margin: -15px auto;
+	margin: -12px auto;
 }
 
 article.profile .divider {
@@ -117,7 +116,7 @@ article.profile .divider {
 	height: 300px;
 	border: 5px solid #e1e4e8;
 	border-radius: 50%;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .skill, .portfolio-list, .my-contact {
@@ -129,7 +128,7 @@ article.profile .divider {
 	display: inline-block;
 	padding: 0px;
 	margin: auto;
-	margin-left: -85px;
+	margin-left: -100px;
 }
 
 .skills h2, .portfolio h2, .contact h2 {
@@ -139,7 +138,7 @@ article.profile .divider {
 .skill img {
 	width: 140px;
 	height: 140px; 
-	padding: 0px 100px 150px 150px;
+	padding: 0px 100px 150px 185px;
 	margin-top: 20px;
 }
 
@@ -184,7 +183,7 @@ article.profile .divider {
 }
 
 .my-contact p {
-	margin: 10px;
+	margin: 7px;
 	text-align: center;
 }
 
@@ -197,7 +196,8 @@ footer {
 }
 
 footer p {
-	font-size: 14px !important;
+	font-size: 14px;
+	line-height: 15px;
 }
 
 section.not-found {
@@ -237,18 +237,19 @@ section.not-found {
 }
 
 /* Responsive page for mobile device */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
 	.profile {
 		margin: 80px 0px 60px 0px;
 	}
 	
 	.profile img {
 		margin-bottom: -80px;
+		margin-top: 30px;
 	}
 	
 	header h1 {
-		margin: 20px 0px 0px 0px;
-		font-size: 21px;
+		margin: 15px 0px -7px 0px;
+		font-size: 24px;
 		float: left;
 	}
 	
@@ -277,7 +278,7 @@ section.not-found {
 		background-image: url(../img/icon/menu-bar.svg);
 		background-repeat: no-repeat;
 		display: inline-block;
-		margin-top: -35px;
+		margin-top: -30px;
 		margin-right: -45px;
 		width: 45px;
 		height: 45px;
@@ -325,6 +326,15 @@ section.not-found {
 	
 	.my-contact li {
 		padding: 30px 0px;
+	}
+	
+	.my-contact p {
+		margin: 20px;
+	}
+	
+	footer p {
+		font-size: 13px;
+		line-height: 10px;
 	}
 	
 	section.not-found {
