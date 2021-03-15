@@ -317,7 +317,7 @@ section.not-found {
 	}
 	
 	.portfolio-list img {
-		height: auto;
+		height: 100%;
 	}
 	
 	.portfolio-list p {
