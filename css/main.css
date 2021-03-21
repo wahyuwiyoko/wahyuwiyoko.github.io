@@ -4,33 +4,26 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
-header {
-	position: fixed;
+header, section.not-found {
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: white;
-	box-shadow: 0px 1px 5px rgba(5, 5, 5, 0.1);
-}
-
-header h1 {
-	margin: 17px 0px 0px 5px;
-	float: left;
-	padding-left: 20px;
-	font-size: 30px;
-	font-weight: 400;
 }
 
 nav {
-	margin: 5px auto;
-	width: 550px;
+	margin: 15px auto;
+	width: 530px;
 	float: right;
+}
+
+nav ul {
+	margin: auto;
 }
 
 nav li {
 	display: inline;
-	margin: auto 10px;
-	padding: 10px;
+	margin: auto 20px;
 }
 
 nav li a:hover {
@@ -43,20 +36,27 @@ nav li a {
 	color: #586069;
 }
 
+nav img {
+	display: none;
+}
+
 /* Hide checkbox for menu */
 input[type=checkbox] {
 	display: none;
-	-webkit-appearance: none;
 }
 
-h1, h2, h3, p, .not-found a {
+h2, h3, p, .not-found a {
 	font-size: 40px;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 25px;
+}
+
+h2, .skill, .portfolio-list, .my-contact, footer {
+	text-align: center;
 }
 
 h3 {
-	font-size: 20px !important;
+	font-size: 20px;
 }
 
 a {
@@ -67,15 +67,20 @@ p {
 	font-size: 16px;
 }
 
-ol, ul {
+ul {
 	list-style-type: none;
+	display: inline-block;
+	padding: 0px;
+	margin: auto;
+	margin-left: -100px;
 }
 
-section {
+section, header {
 	display: block;
 	background-color: #fcfdfd;
-	overflow: hidden;
 	border-bottom: 1px solid #e1e4e8;
+	overflow: hidden;
+	word-wrap: break-word;
 }
 
 section.white {
@@ -98,15 +103,10 @@ article.profile .divider {
 	float: left;
 	width: 50%;
 	text-align: center;
-	margin: 140px 0px;
+	margin: 140px auto;
 }
 
-.profile h2 {
-	text-align: left;
-	padding-left: 40px;
-}
-
-.profile p {
+.profile h2, .profile p, .portfolio-list p {
 	text-align: left;
 	padding: 0px 40px;
 }
@@ -120,38 +120,25 @@ article.profile .divider {
 }
 
 .skill, .portfolio-list, .my-contact {
-	text-align: center;
 	margin-top: 100px;
-}
-
-.skill ul, .portfolio-list ul, .my-contact ul {
-	display: inline-block;
-	padding: 0px;
-	margin: auto;
-	margin-left: -100px;
-}
-
-.skills h2, .portfolio h2, .contact h2 {
-	text-align: center;
 }
 
 .skill img {
 	width: 140px;
 	height: 140px; 
-	padding: 0px 100px 150px 185px;
+	padding: 0px 100px 120px 200px;
 	margin-top: 20px;
 }
 
 .skill img.php {
 	width: 170px;
-	margin: 40px 0px 0px 0px;
+	margin-top: 30px;
 }
 
 .portfolio-list li, .my-contact li {
 	width: 480px;
 	border: 1px solid #e1e4e8;
 	border-radius: 6px;
-	background-color: white;
 	margin-bottom: 100px;
 	margin-left: 100px;
 	display: inline-block;
@@ -170,27 +157,26 @@ article.profile .divider {
 .portfolio-list p {
 	margin: 4px;
 	padding: 10px;
-	text-align: left;
 }
 
 .my-contact li {
-	width: 300px !important;
-	padding: 30px;
+	width: 300px;
 }
 
 .my-contact img {
-	height: 80px !important;
+	height: 80px;
+	width: 	100px;
+	margin-top: 25px;
 }
 
 .my-contact p {
 	margin: 7px;
-	text-align: center;
+	margin-bottom: 25px;
 }
 
 footer {
 	background-color: #fafbfc;
 	padding: .1px;
-	text-align: center;
 	width: 100%;
 	color: #586069;
 }
@@ -201,18 +187,15 @@ footer p {
 }
 
 section.not-found {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
 	bottom: 0;
 	padding-left: 250px;
 	padding-top: 100px;
 }
 
-.not-found h2 {
+.not-found h1, .not-found h2 {
 	font-size: 30px;
 	margin: -10px 0px 25px 0px;
+	text-align: left;
 }
 
 .not-found a {
@@ -222,8 +205,7 @@ section.not-found {
 }
 
 /* Clearfix */
-.cf:before,
-.cf:after {
+.cf:before, .cf:after {
     content: " ";
     display: table; 
 }
@@ -232,12 +214,13 @@ section.not-found {
     clear: both;
 }
 
-.cf {
-    *zoom: 1;
-}
-
 /* Responsive page for mobile device */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
+	img {
+		max-width: 100%;
+		height: auto !important;
+	}
+	
 	.profile {
 		margin: 80px 0px 60px 0px;
 	}
@@ -245,24 +228,10 @@ section.not-found {
 	.profile img {
 		margin-bottom: -80px;
 		margin-top: 30px;
-		width: 100%;
-		height: 100%;
 	}
 	
 	.responsive-prof-pic {
-		margin: auto 30px;
-		width: auto;
-	}
-	
-	header h1 {
-		margin: 15px 0px -7px 0px;
-		font-size: 24px;
-		float: left;
-	}
-	
-	nav {
-		margin: 5px 0px 7px -60px;
-		float: left;
+		margin: auto 45px;
 	}
 	
 	nav li, .skill ul, .skill ul li, .my-contact li, .portfolio-list li, nav li a {
@@ -274,19 +243,16 @@ section.not-found {
 	}
 	
 	nav li {
-		margin: auto 30px;
+		margin: 20px 30px;
 	}
 
 	nav li a {
-		padding-bottom: 7px;
+		text-align: center;
 	}
 	
-	nav .nav {
-		background-image: url(../img/icon/menu-bar.svg);
-		background-repeat: no-repeat;
-		display: inline-block;
-		margin-top: -30px;
-		margin-right: -45px;
+	nav img {
+		display: inline;
+		margin: -5px 15px -3px 0px;
 		width: 45px;
 		height: 45px;
 		float: right;
@@ -295,22 +261,21 @@ section.not-found {
 	/* Show menu when invisible checkbox is checked */
 	input[type=checkbox]:checked ~ ul.menu {
 		display: block;
-		margin: 17px 0px 0px 0px;
+		margin-top: 45px;
+		border-top: 1px solid #e1e4e8;
 	}
 	
-	.skill ul, .profile, nav, .portfolio-list ul {
+	.skill ul, .profile, nav, .portfolio-list ul, .my-contact ul {
 		width: 100%;
 	}
 	
 	.skill img {
-		width: 125px;
-		height: 125px;
+		width: 100px;
 		padding: 0px 0px 150px 0px;
 	}
 	
 	.skill img.php {
-		margin: 0px;
-		margin-bottom: -100px;
+		margin-bottom: -50px;
 	}
 	
 	.skill ul, .portfolio-list ul, .my-contact ul {
@@ -319,12 +284,8 @@ section.not-found {
 	
 	.portfolio-list li, .my-contact li {
 		margin: auto 20px;
-		width: auto !important;
+		width: auto;
 		margin-bottom: 100px;
-	}
-	
-	.portfolio-list img {
-		height: 100%;
 	}
 	
 	.portfolio-list p {
@@ -332,11 +293,11 @@ section.not-found {
 	}
 	
 	.my-contact li {
-		padding: 30px 0px;
+		margin: 0px 50px 100px 50px;
 	}
 	
-	.my-contact p {
-		margin: 20px;
+	.my-contact img {
+		height: 85px !important;
 	}
 	
 	footer p {
