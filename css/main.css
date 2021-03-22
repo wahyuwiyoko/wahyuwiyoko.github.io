@@ -95,7 +95,7 @@ section.white {
 }
 
 article.profile .divider {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	margin-left: 40px;
 }
 
@@ -196,6 +196,7 @@ section.not-found {
 	font-size: 30px;
 	margin: -10px 0px 25px 0px;
 	text-align: left;
+	line-height: 35px;
 }
 
 .not-found a {
@@ -222,7 +223,7 @@ section.not-found {
 	}
 	
 	.profile {
-		margin: 80px 0px 60px 0px;
+		margin: 65px 0px;
 	}
 	
 	.profile img {
@@ -253,15 +254,14 @@ section.not-found {
 	nav img {
 		display: inline;
 		margin: -5px 15px -3px 0px;
-		width: 45px;
-		height: 45px;
+		width: 35px;
 		float: right;
 	}
 	
 	/* Show menu when invisible checkbox is checked */
 	input[type=checkbox]:checked ~ ul.menu {
 		display: block;
-		margin-top: 45px;
+		margin-top: 37px;
 		border-top: 1px solid #e1e4e8;
 	}
 	
