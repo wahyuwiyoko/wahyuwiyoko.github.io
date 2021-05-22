@@ -18,6 +18,7 @@ nav {
 
 nav ul {
 	margin: auto;
+	margin-right: 20px;
 }
 
 nav li {
@@ -243,6 +244,7 @@ section.not-found {
 	
 	nav ul {
 		display: none;
+		margin: auto;
 	}
 	
 	nav li {
@@ -288,6 +290,7 @@ section.not-found {
 	
 	.portfolio-list p {
 		margin: 0px;
+		height: 100px;
 	}
 	
 	.my-contact li {
