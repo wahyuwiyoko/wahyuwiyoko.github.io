@@ -1,3 +1,8 @@
+:root {
+	--border-radius: 20px; /* Portfolio and contact borders */
+	--padding: 10px; /* Portfolio and contact description paddings */
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -36,12 +41,8 @@ nav li a {
 	color: #586069;
 }
 
-nav img {
-	display: none;
-}
-
 /* Hide checkbox for menu */
-input[type=checkbox] {
+input[type="checkbox"], nav img {
 	display: none;
 }
 
@@ -57,6 +58,7 @@ h2, .skill, .portfolio-list, .my-contact, footer {
 
 h3 {
 	font-size: 20px;
+	font-weight: 400;
 }
 
 a {
@@ -82,7 +84,7 @@ section, header {
 	word-wrap: break-word;
 }
 
-section.white {
+header, footer {
 	background-color: white;
 }
 
@@ -136,14 +138,14 @@ article.profile .divider {
 .portfolio-list li, .my-contact li {
 	width: 480px;
 	border: 1px solid #e1e4e8;
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 	margin-bottom: 100px;
 	margin-left: 100px;
 }
 
 .portfolio-list img {
-	border-top-right-radius: 6px;
-	border-top-left-radius: 6px;
+	border-top-right-radius: var(--border-radius);
+	border-top-left-radius: var(--border-radius);
 }
 
 .portfolio-list img, .my-contact img {
@@ -153,7 +155,7 @@ article.profile .divider {
 
 .portfolio-list p {
 	margin: 4px;
-	padding: 10px;
+	padding: var(--padding);
 	height: 80px;
 }
 
@@ -175,10 +177,10 @@ article.profile .divider {
 	margin: 7px;
 	margin-bottom: 20px;
 	height: 50px;
+	padding: var(--padding);
 }
 
 footer {
-	background-color: #fafbfc;
 	padding: .1px;
 	width: 100%;
 	color: #586069;
