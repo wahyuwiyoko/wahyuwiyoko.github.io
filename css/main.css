@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 :root {
-	--border-radius: 20px; /* Portfolio and contact borders */
-	--padding: 10px; /* Portfolio and contact description paddings */
+	--border-radius: 20px; /* Portfolio and contact */
+	--padding: 10px; /* Portfolio and contact description */
+	--border-color: 1px solid #ced4cd; /* Section and header (mobile) */
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Roboto, sans-serif;
+	font-family: 'Questrial', Roboto, sans-serif;
 }
 
 header, section.not-found {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	box-shadow: 0px 1px 2px rgba(5, 5, 5, 0.1);
 }
 
 nav {
@@ -32,12 +36,11 @@ nav li {
 }
 
 nav li a:hover {
-	color: #00ccff;
+	color: #2a9d8f;
 }
 
 nav li a {
 	font-size: 20px;
-	font-weight: 300;
 	color: #586069;
 }
 
@@ -58,7 +61,7 @@ h2, .skill, .portfolio-list, .my-contact, footer {
 
 h3 {
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: bold;
 }
 
 a {
@@ -78,8 +81,8 @@ ul {
 
 section, header {
 	display: block;
-	background-color: #fcfdfd;
-	border-bottom: 1px solid #e1e4e8;
+	background-color: #fdfdfd;
+	border-bottom: var(--border-color);
 	overflow: hidden;
 	word-wrap: break-word;
 }
@@ -91,7 +94,7 @@ header, footer {
 .divider {
 	width: 80px;
 	height: 3px;
-	background-color: #57c1b6ff;
+	background-color: #48cae4;
 	margin: -12px auto;
 }
 
@@ -129,15 +132,15 @@ article.profile .divider {
 }
 
 .skill img {
-	width: 140px;
-	height: 140px; 
+	width: 135px;
+	height: 135px; 
 	padding: 0px 65px 120px 165px;
 	margin-top: 20px;
 }
 
 .portfolio-list li, .my-contact li {
 	width: 480px;
-	border: 1px solid #e1e4e8;
+	border: 1px solid #cecece;
 	border-radius: var(--border-radius);
 	margin-bottom: 100px;
 	margin-left: 100px;
@@ -211,17 +214,21 @@ section.not-found {
 }
 
 /* Clearfix */
-.cf:before, .cf:after {
+section:before, section:after {
     content: " ";
     display: table; 
 }
 
-.cf:after {
+section:after {
     clear: both;
 }
 
 /* Responsive page for mobile device */
 @media only screen and (max-width: 768px) {
+	header {
+		position: absolute;
+	}
+
 	img {
 		max-width: 100%;
 		height: auto !important;
@@ -268,7 +275,7 @@ section.not-found {
 	input[type=checkbox]:checked ~ ul.menu {
 		display: block;
 		margin-top: 41px;
-		border-top: 1px solid #e1e4e8;
+		border-top: var(--border-color);
 	}
 	
 	.skill ul, .profile, nav, .portfolio-list ul, .my-contact ul {
