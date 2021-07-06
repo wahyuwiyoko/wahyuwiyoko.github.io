@@ -4,7 +4,6 @@
 	--border-radius: 20px; /* Portfolio and contact */
 	--padding: 10px; /* Portfolio and contact description */
 	--border-color: 1px solid #ced4cd; /* Section and header (mobile) */
-	--font-weight: bold; /* Menu and h3 */
 	--letter-spacing: 0.025em; /* Menu, h2, and h3 */
 }
 
@@ -48,7 +47,6 @@ nav li a:hover {
 nav li a {
 	font-size: 20px;
 	color: #586069;
-	font-weight: var(--font-weight);
 	letter-spacing: var(--letter-spacing);
 }
 
@@ -69,7 +67,6 @@ h2, .skill, .portfolio-list, .my-contact, footer {
 
 h3 {
 	font-size: 23px;
-	font-weight: var(--font-weight);
 }
 
 a {
@@ -217,7 +214,6 @@ section.not-found {
 	font-size: 35px;
 	margin: -10px 0px 25px 0px;
 	text-align: left;
-	font-weight: var(--font-weight);
 }
 
 .not-found a {
