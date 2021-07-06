@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
 
 :root {
 	--border-radius: 20px; /* Portfolio and contact */
 	--padding: 10px; /* Portfolio and contact description */
 	--border-color: 1px solid #ced4cd; /* Section and header (mobile) */
+	--font-weight: bold; /* Menu and h3 */
+	--letter-spacing: 0.025em; /* Menu, h2, and h3 */
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Questrial', Roboto, sans-serif;
+}
+
+header, h2, h3 {
+	font-family: 'Gudea', Roboto, sans-serif;
+	letter-spacing: var(--letter-spacing);
 }
 
 header, section.not-found {
@@ -42,6 +48,8 @@ nav li a:hover {
 nav li a {
 	font-size: 20px;
 	color: #586069;
+	font-weight: var(--font-weight);
+	letter-spacing: var(--letter-spacing);
 }
 
 /* Hide checkbox for menu */
@@ -49,8 +57,8 @@ input[type="checkbox"], nav img {
 	display: none;
 }
 
-h2, h3, p, .not-found a {
-	font-size: 40px;
+h2, .not-found a {
+	font-size: 43px;
 	font-weight: 300;
 	line-height: 25px;
 }
@@ -60,8 +68,8 @@ h2, .skill, .portfolio-list, .my-contact, footer {
 }
 
 h3 {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 23px;
+	font-weight: var(--font-weight);
 }
 
 a {
@@ -70,6 +78,10 @@ a {
 
 p {
 	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.050em;
 }
 
 ul {
@@ -120,7 +132,7 @@ article.profile .divider {
 	height: 300px;
 	border: 5px solid #e1e4e8;
 	border-radius: 50%;
-	margin-top: 50px;
+	margin-top: 45px;
 }
 
 .skill, .portfolio-list, .my-contact {
@@ -181,6 +193,7 @@ article.profile .divider {
 	margin-bottom: 20px;
 	height: 50px;
 	padding: var(--padding);
+	padding-top: 0px;
 }
 
 footer {
@@ -200,11 +213,11 @@ section.not-found {
 	padding-top: 100px;
 }
 
-.not-found h1, .not-found h2 {
-	font-size: 30px;
+.not-found h2 {
+	font-size: 35px;
 	margin: -10px 0px 25px 0px;
 	text-align: left;
-	line-height: 35px;
+	font-weight: var(--font-weight);
 }
 
 .not-found a {
@@ -240,7 +253,7 @@ section:after {
 	
 	.profile img {
 		margin-bottom: -80px;
-		margin-top: 30px;
+		margin-top: 45px;
 	}
 	
 	.responsive-prof-pic {
