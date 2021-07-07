@@ -112,11 +112,15 @@ article.profile .divider {
 	margin-left: 40px;
 }
 
-.profile {
-	float: left;
-	width: 50%;
+article.profile {
+	width: 100%;
 	text-align: center;
 	margin: 140px auto;
+}
+
+.responsive-prof-pic, .about {
+	width: 50%;
+	float: left;
 }
 
 .profile h2, .profile p, .portfolio-list p {
@@ -223,12 +227,12 @@ section.not-found {
 }
 
 /* Clearfix */
-section:before, section:after {
+section:before, section:after, .profile:after {
     content: " ";
     display: table; 
 }
 
-section:after {
+section:after, .profile:after {
     clear: both;
 }
 
@@ -243,17 +247,13 @@ section:after {
 		height: auto !important;
 	}
 	
-	.profile {
-		margin: 65px 0px;
-	}
-	
 	.profile img {
-		margin-bottom: -80px;
-		margin-top: 45px;
+		max-width: 80%;
+		margin-bottom: 130px;
 	}
 	
 	.responsive-prof-pic {
-		margin: auto 45px;
+		margin: -80px auto;
 	}
 	
 	nav li, .skill ul, .skill ul li, .my-contact li, .portfolio-list li, nav li a {
@@ -287,7 +287,7 @@ section:after {
 		border-top: var(--border-color);
 	}
 	
-	.skill ul, .profile, nav, .portfolio-list ul, .my-contact ul {
+	.responsive-prof-pic, .about, .skill ul, .profile, nav, .portfolio-list ul, .my-contact ul {
 		width: 100%;
 	}
 	
@@ -325,8 +325,7 @@ section:after {
 	}
 	
 	section.not-found {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 100px 30px;
 	}
 }
 
