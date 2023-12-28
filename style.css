@@ -1,18 +1,20 @@
 :root {
-  --bg-color: #faf3eb;
-  --text-color: #3b3852;
-  --link-color: #443653;
-  --border-color: #cecacd;
-  --card-bg-color: #fffaf3;
+  --background: #faf4ed;
+  --text: #3b3852;
+  --primary: #fffaf3;
+  --secondary: #f2e9e1;
+  --accent: #243e42;
+  --outline: #cecacd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #191724;
-    --text-color: #e0def4;
-    --link-color: #d1bbec;
-    --border-color: #524f67;
-    --card-bg-color: #1f1d2e;
+    --background: #191724;
+    --text: #e0def4;
+    --primary: #1f1d2e;
+    --secondary: #232136;
+    --accent: #9ccfd8;
+    --outline: #524f67;
   }
 }
 
@@ -23,8 +25,8 @@ html {
 body {
   margin: 0;
   font: 1rem/1.6 sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text);
+  background-color: var(--background);
   letter-spacing: 0.04rem;
 }
 
@@ -49,7 +51,7 @@ h3 {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
@@ -76,7 +78,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  border-block: 1px solid var(--border-color);
+  border-block: 1px solid var(--outline);
 }
 
 section {
@@ -96,8 +98,8 @@ ul {
 }
 
 details {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   border-radius: 5px;
   padding: 1rem;
 }
@@ -114,8 +116,8 @@ summary {
 }
 
 article {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   border-radius: 5px;
   padding: 2rem;
 }

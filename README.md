@@ -4,5 +4,9 @@ My personal portfolio website to showcase various projects.
 
 ## Attributions
 
-- [Rosé Pine](https://rosepinetheme.com/) for a beautiful and minimalist color scheme.
-- [Coolors](https://coolors.co/contrast-checker) contrast checker for improving the color contrast of the Rosé Pine color scheme.
+- [Rosé Pine](https://rosepinetheme.com/) for a beautiful and minimalist
+  color scheme.
+- [Coolors](https://coolors.co/contrast-checker) contrast checker for
+  improving the color contrast of the Rosé Pine color scheme.
+- [Realtime Colors](https://www.realtimecolors.com/) for visualize colors on a
+  a real site.
