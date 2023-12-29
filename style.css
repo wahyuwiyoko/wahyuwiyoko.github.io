@@ -1,18 +1,18 @@
 :root {
-  --bg-color: #faf3eb;
-  --text-color: #3b3852;
-  --link-color: #443653;
-  --border-color: #cecacd;
-  --card-bg-color: #fffaf3;
+  --background: #faf4ed;
+  --text: #3b3852;
+  --primary: #fffaf3;
+  --accent: #183f4e;
+  --outline: #cecacd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #191724;
-    --text-color: #e0def4;
-    --link-color: #d1bbec;
-    --border-color: #524f67;
-    --card-bg-color: #1f1d2e;
+    --background: #191724;
+    --text: #e0def4;
+    --primary: #1f1d2e;
+    --accent: #a0cdde;
+    --outline: #524f67;
   }
 }
 
@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   font: 1rem/1.6 sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text);
+  background-color: var(--background);
   letter-spacing: 0.04rem;
 }
 
@@ -49,7 +49,7 @@ h3 {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
@@ -65,8 +65,8 @@ nav {
 }
 
 nav a,
-summary,
-.links {
+.links,
+.skills span {
   font-weight: 500;
 }
 
@@ -76,7 +76,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  border-block: 1px solid var(--border-color);
+  border-block: 1px solid var(--outline);
 }
 
 section {
@@ -84,26 +84,22 @@ section {
   margin-block: 3rem;
 }
 
-ul {
-  padding: 0 1.2rem;
+.about p:last-child {
+  margin-bottom: 0;
 }
 
-.tech-stack {
-  margin-top: 3rem;
+.skills {
   display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
 }
 
-details {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+.skills span {
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
+  padding: 0.2rem 0.5rem;
   border-radius: 5px;
-  padding: 1rem;
-}
-
-summary {
-  cursor: pointer;
 }
 
 .project-container {
@@ -113,11 +109,11 @@ summary {
   margin-top: 1.7rem
 }
 
-article {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
-  border-radius: 5px;
+.project-container article {
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   padding: 2rem;
+  border-radius: 5px;
 }
 
 .links {
