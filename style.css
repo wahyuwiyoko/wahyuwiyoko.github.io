@@ -2,8 +2,7 @@
   --background: #faf4ed;
   --text: #3b3852;
   --primary: #fffaf3;
-  --secondary: #f2e9e1;
-  --accent: #243e42;
+  --accent: #183f4e;
   --outline: #cecacd;
 }
 
@@ -12,8 +11,7 @@
     --background: #191724;
     --text: #e0def4;
     --primary: #1f1d2e;
-    --secondary: #232136;
-    --accent: #9ccfd8;
+    --accent: #a0cdde;
     --outline: #524f67;
   }
 }
@@ -67,8 +65,8 @@ nav {
 }
 
 nav a,
-summary,
-.links {
+.links,
+.skills span {
   font-weight: 500;
 }
 
@@ -86,26 +84,22 @@ section {
   margin-block: 3rem;
 }
 
-ul {
-  padding: 0 1.2rem;
+.about p:last-child {
+  margin-bottom: 0;
 }
 
-.tech-stack {
-  margin-top: 3rem;
+.skills {
   display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
 }
 
-details {
+.skills span {
   border: 2px solid var(--outline);
   background-color: var(--primary);
+  padding: 0.2rem 0.5rem;
   border-radius: 5px;
-  padding: 1rem;
-}
-
-summary {
-  cursor: pointer;
 }
 
 .project-container {
@@ -115,11 +109,11 @@ summary {
   margin-top: 1.7rem
 }
 
-article {
+.project-container article {
   border: 2px solid var(--outline);
   background-color: var(--primary);
-  border-radius: 5px;
   padding: 2rem;
+  border-radius: 5px;
 }
 
 .links {
