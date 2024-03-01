@@ -20,6 +20,15 @@ body {
   letter-spacing: 0.04rem;
 }
 
+main {
+  max-width: 60ch;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.5rem;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -47,32 +56,29 @@ a {
   text-decoration-color: var(--outline);
 }
 
-.links,
-.skills span {
-  font-weight: 500;
-}
-
-main {
-  max-width: 60ch;
-  display: flex;
-  flex-direction: column;
-  row-gap: 5rem;
-  margin: auto;
-  padding: 3rem 1.5rem;
-}
-
-.social.links {
-  margin-top: 2rem;
-}
-
-.skills {
+ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.7rem;
+  font-weight: 500;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.skills span {
+ul.links {
+  column-gap: 1.5rem;
+}
+
+ul.social {
+  margin-top: 1.5rem;
+}
+
+ul.skills {
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+ul.skills li {
   border: 2px solid var(--outline);
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
@@ -89,9 +95,4 @@ main {
   border: 2px solid var(--outline);
   padding: 2rem;
   border-radius: 5px;
-}
-
-.links {
-  display: flex;
-  column-gap: 1.5rem;
 }
